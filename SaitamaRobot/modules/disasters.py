@@ -67,17 +67,17 @@ def addpiro(update: Update, context: CallbackContext) -> str:
       message.reply_text("This member is already a Pro Developer")
         
     if user_id in DRAGONS:
-        rt += "Requested HQ to promote a Dragon Disaster to Pro Developer."
+        rt += "Requested @Goku_kun to promote a Dragon Disaster to Pro Developer."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "Requested HQ to promote a Demon Disaster to Pro Developer."
+        rt += "Requested @Goku_Support to promote a Demon Disaster to Pro Developer."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HQ to promote a Wolf Disaster to Pro Developer."
+        rt += "Requested  @Goku_Support to promote a Wolf Disaster to Pro Developer."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -128,12 +128,12 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested HA to promote a Demon Disaster to Dragon."
+        rt += "Requested @Goku_Support to promote a Demon Disaster to Dragon."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote a Wolf Disaster to Dragon."
+        rt += "Requested @Goku_Support to promote a Wolf Disaster to Dragon."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -192,7 +192,7 @@ def addsupport(
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this Wolf Disaster to Demon"
+        rt += "Requested  @Goku_Support to promote this Wolf Disaster to Demon"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -617,7 +617,7 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Hero Association Members ⚡️:</b>\n"
+    reply = "<b>@Goku_Support Admemes ⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
