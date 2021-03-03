@@ -212,7 +212,7 @@ def start(update: Update, context: CallbackContext):
                             text=" ✨ Help ",
                             url="https://t.me/SonGokuRobot?start=help"),
                          InlineKeyboardButton(
-                            text=" ⚡️ Get Started ",
+                            text=" 😎 All functions ",
                              url="https://t.me/Goku_Updates/7")        
                        
                      ],
