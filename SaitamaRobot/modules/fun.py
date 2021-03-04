@@ -7,12 +7,12 @@ from telegram.ext import Filters, CallbackContext, CommandHandler, run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown
 
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user
-from SaitamaRobot.modules.helper_funcs.alternate import typing_action
-from SaitamaRobot import dispatcher, DRAGONS, DEMONS
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from tg_bot.modules.helper_funcs.extraction import extract_user
+from tg_bot.modules.helper_funcs.alternate import typing_action
+from tg_bot import dispatcher, SUDO_USERS, SUPPORT_USERS
+from tg_bot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
-import SaitamaRobot.modules.helper_funcs.fun_strings as fun
+import tg_bot.modules.helper_funcs.fun_strings as fun
 
 
 @run_async
@@ -305,7 +305,7 @@ def gbun(update, context):
 
     if update.effective_message.chat.type == "private":
         return
-    if int(user.id) in DRAGONS or int(user.id) in DEMONS:
+    if int(user.id) in SUDO_USERS or int(user.id) in SUPPORT_USERS:
         context.bot.sendMessage(chat.id, (random.choice(fun.GBUN)))
 
 
@@ -708,3 +708,5 @@ dispatcher.add_handler(DICE_HANDLER)
 dispatcher.add_handler(YESNOWTF_HANDLER)
 dispatcher.add_handler(GDMORNING_HANDLER)
 dispatcher.add_handler(GDNIGHT_HANDLER)
+
+
