@@ -7,12 +7,12 @@ from telegram.ext import Filters, CallbackContext, CommandHandler, run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown
 
-from tg_bot.modules.helper_funcs.extraction import extract_user
-from tg_bot.modules.helper_funcs.alternate import typing_action
-from tg_bot import dispatcher, SUDO_USERS, SUPPORT_USERS
-from tg_bot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from SaitamaRobot.modules.helper_funcs.extraction import extract_user
+from SaitamaRobot.modules.helper_funcs.alternate import typing_action
+from SaitamaRobot import dispatcher, SUDO_USERS, SUPPORT_USERS
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
-import tg_bot.modules.helper_funcs.fun_strings as fun
+import SaitamaRobot.modules.helper_funcs.fun_strings as fun
 
 
 @run_async
