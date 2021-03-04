@@ -9,7 +9,7 @@ from telegram.utils.helpers import escape_markdown
 
 from SaitamaRobot.modules.helper_funcs.extraction import extract_user
 from SaitamaRobot.modules.helper_funcs.alternate import typing_action
-from SaitamaRobot import dispatcher, SUDO_USERS, SUPPORT_USERS
+from SaitamaRobot import dispatcher, DRAGONS, DEMONS
 from SaitamaRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
 import SaitamaRobot.modules.helper_funcs.fun_strings as fun
