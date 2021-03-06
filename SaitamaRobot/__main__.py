@@ -73,15 +73,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello! I am Son Goku! Just a powerful and funny guy! I will help you finish bad guys in your group and many more things!
-I am an Anime themed group management bot.
+𝐻𝑒𝑙𝑙𝑜 {}, 𝐻𝑒𝑙𝑙𝑜 𝑚𝑦 𝑛𝑎𝑚𝑒 𝑖𝑠 {}! 
+I hᴏᴩᴇ I ᴄᴀn hᴇlᴩ yᴏu ʍᴀnᴀging yᴏur grᴏuᴩ!
 Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
+Want to know more about me? Click [here]("https://t.me/Goku_Updates/69")
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with Kamehameha! Have a look at the following for an idea of some of \
+I'm a Hero For Fun and help admins manage their groups! Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
  • /help: PM's you this message.
